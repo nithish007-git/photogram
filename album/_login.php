@@ -4,28 +4,15 @@
 <!doctype html>
 <html lang="en">
 
+
   <? load_template('_head'); ?>
-
-  <body>
-    
-
+ <body>
   <?php
     load_template('header');
   ?>
  <?php
     load_template('_login');
   ?>
-
-
-
-<main>
-
-
-
-  
-
-
-</main>
 
 <footer class="text-muted py-5">
   <div class="container">

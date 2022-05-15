@@ -14,11 +14,11 @@
 
     <!-- Bootstrap core CSS -->
 <link href="album/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<? printf($_SERVER['DOCUMENT_ROOT'].'/htdocs/photogram/album/css/'.basename($_SERVER['PHP_SELF'], ".php").".css") ?>
    <? if (file_exists($_SERVER['DOCUMENT_ROOT'].'/htdocs/photogram/album/css/'.basename($_SERVER['PHP_SELF'], ".php").".css")) {  ?>
 
 
-         <link href="/css/<?= basename($_SERVER['PHP_SELF'], ".php") ?> .css" rel="stylesheet">
+         <link href="css/<?= basename($_SERVER['PHP_SELF'],".php") ?>.css" rel="stylesheet">
+       
 
   <? }?>
 </head>
