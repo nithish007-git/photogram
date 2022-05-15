@@ -14,38 +14,11 @@
 
     <!-- Bootstrap core CSS -->
 <link href="album/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<? printf($_SERVER['DOCUMENT_ROOT'].'/htdocs/photogram/album/css/'.basename($_SERVER['PHP_SELF'], ".php").".css") ?>
+   <? if (file_exists($_SERVER['DOCUMENT_ROOT'].'/htdocs/photogram/album/css/'.basename($_SERVER['PHP_SELF'], ".php").".css")) {  ?>
 
-  <style>
-   
 
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-}
+         <link href="/css/<?= basename($_SERVER['PHP_SELF'], ".php") ?> .css" rel="stylesheet">
 
-.form-signin .checkbox {
-  font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-   </style>
-
-    
+  <? }?>
 </head>

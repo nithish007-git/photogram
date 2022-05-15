@@ -3,6 +3,7 @@
 ?>
 <!doctype html>
 <html lang="en">
+
   <? load_template('_head'); ?>
 
   <body>
